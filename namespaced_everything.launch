@@ -1,0 +1,14 @@
+<!-- 
+  This results in the following topics:
+  
+  /family/public
+  /family/dude/private
+  
+  as expected.
+ -->
+<launch>
+  <group ns="family">
+    <node pkg="nodelet" type="nodelet" name="nodelet_manager" args="manager"/>
+    <node pkg="nodelet" type="nodelet" name="dude" args="load dude/DudeNodelet nodelet_manager"/>
+  </group>
+</launch>

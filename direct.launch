@@ -1,0 +1,13 @@
+<!-- 
+  This results in the following topics:
+  
+  /dude/private
+  /public
+  
+  as expected
+ -->
+<launch>
+  <node pkg="nodelet" type="nodelet" name="nodelet_manager" args="manager"/>
+  <node pkg="nodelet" type="nodelet" name="dude" args="load dude/DudeNodelet nodelet_manager">
+  </node>
+</launch>

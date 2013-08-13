@@ -1,0 +1,8 @@
+<library path="lib/libdude_nodelet">
+  <class name="dude/DudeNodelet" type="dude::DudeNodelet" base_class_type="nodelet::Nodelet">
+    <description>
+      Test nodelet
+    </description>
+  </class>
+</library>
+
